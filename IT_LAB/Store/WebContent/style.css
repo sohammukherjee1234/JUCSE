@@ -1,0 +1,165 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background-color: black !important;	
+}
+
+.login-form{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin-left: 40%;
+	margin-top: 15%;
+	
+}
+
+.login-input{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid grey;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-color: black;
+	color: white;
+}
+
+.btn-container{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.registration-form{
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 35%;
+	margin-top: 5%;
+}
+
+.registration-input{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid grey;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-color: black;
+	color: white
+}
+
+.gender{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.preference{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.registration-btn{
+	width: 200px;
+	align-self: center;
+	margin-top: 5px;
+}
+
+.registration-secondary-btn{
+	border: none;
+	background-color: inherit;
+	color: navy;
+	width: 250px;
+	align-self: center;
+}
+
+.navbar{
+	display: flex;
+	height: 70px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.header{
+	
+	display: flex;
+	color: white;
+}
+
+.username{
+	margin-right: 5px;
+	
+}
+.logout{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: navy;
+}
+
+.items{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: white;
+}
+
+.item-data{
+	width: 250px;
+	height: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.image-container{
+	height: 50%;
+	padding: 10px 10px 10px 10px;
+}
+
+
+
+.item-header{
+	font-weight: bolder;
+	font-size: x-large;
+	color: white;
+}
+
+.item-desc{
+	color: white
+}
+
+.item-price{
+	display: flex;
+	
+}
+
+.old-price{
+	text-decoration: line-through;
+	color: white;
+	margin-right: 5px;
+}
+.new-price{
+	color: white;
+	margin-left: 5px;
+}
+
+.item-discount{
+	color: green;
+}
+
+
+
+

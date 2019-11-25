@@ -1,0 +1,44 @@
+create database flight;
+
+
+create table flightinfo(
+    flightno varchar(10) NOT NULL,
+    flightname varchar(50) NOT NULL,
+    source varchar(50) not null,
+    destination varchar(50) not null,
+    departuretime varchar(20) not null,
+    arrivaltime varchar(20) not null,
+    duration varchar(20) not null,
+    price int(11) not null
+);
+
+
+create table hotdeals(
+    flightno varchar(10) not null,
+    discount int(11) not null
+);
+
+insert into flightinfo (flightno, flightname, source, destination, departuretime, arrivaltime, duration, price) values
+("6E2131", "Indigo", "Delhi", "Bangalore", "12:00PM", "3:00PM", "03hrs 00mins" ,6358);
+
+insert into flightinfo (flightno, flightname, source, destination, departuretime, arrivaltime, duration, price) values
+("I5721", "Air Asia", "Delhi", "Bangalore", "10:30AM", "1:00PM", "02hrs 30mins", 6940);
+
+insert into flightinfo (flightno, flightname, source, destination, departuretime, arrivaltime, duration, price) values
+("AI526", "Air India", "Kolkata", "Hyderabad", "02:00PM", "04:00PM", "02hrs 00mins", 6089);
+
+insert into flightinfo (flightno, flightname, source, destination, departuretime, arrivaltime, duration, price) values
+("SG626", "Spicejet", "Kolkata", "Hyderbad", "09:45AM", "12:00PM", "02hrs 15mins", 8652);
+
+insert into flightinfo (flightno, flightname, source, destination, departuretime, arrivaltime, duration, price) values
+("I5556", "Air Asia", "Kolkata", "Chennai", "10:00PM", "01:15AM", "03hrs 15mins",  6298);
+
+insert into flightinfo (flightno, flightname, source, destination, departuretime, arrivaltime, duration, price) values
+("6E534", "Indigo", "Kolkata", "Chennai" , "06:00PM", "09:00PM", "03hrs 00mins", 6299);
+
+insert into hotdeals (flightno, discount) values 
+("AI526", 5);
+
+insert into hotdeals (flightno, discount) values 
+("6E534", 10);
+

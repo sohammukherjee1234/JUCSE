@@ -1,0 +1,33 @@
+create table items(
+            itemid varchar(50) not null,
+            name varchar(50) not null,
+            descr varchar(100) not null,
+            ideal_for char(1) not null,
+            price int(11) not null,
+            discount int(11) not null,
+            new_arvl tinyint(1) not null,
+            filename varchar(50) not null
+            );
+
+insert into items (itemid, name, descr, ideal_for, price, discount, new_arvl, filename)
+values
+('i001', 'Gloryboyz Shirt', 'Mens animal printed regular fit cotton shirt', 'M', 719, 5, 0, 'gloryboy_shirt.jpg'),
+('i002', 'Qlonz Shirt', 'Men Solud Casual Black Shirt', 'M', 800, 10, 1, 'qlonz_shirt.jpeg'),
+('i003', 'Fabtag Shirt', 'Formal Blue Shirt for Men', 'M', 650, 2, 0, 'fabtag_shirt.jpeg'),
+('i004', 'Brandit Shirt', 'Check Shirt Black Casual', 'M', 2400, 15, 1, 'brandit_shirt.jpeg'),
+('i005', 'Henley Shirt', 'Rib Knit Henley Shirt for Women', 'F', 668, 2, 1, 'henley_shirt.jpeg'),
+('i006', 'Crop Top', 'Criss-cross sleeved crop top', 'F', 500, 2, 0, 'criss-cross-top.jpeg'),
+('i007', 'Max Printed Top', 'MAX printed round necked crop top', 'F', 250, 1, 0, 'max_top.jpeg'),
+('i008', 'Gown Girls', 'Gown Girls Full Length Party Dress', 'F', 2200, 20, 1, 'gown.jpeg');
+('i009', 'New Top', 'Just random', 'F', 200, 20, 1, 'gown.jpeg');
+
+
+CREATE TABLE users (
+  uname varchar(50) NOT NULL,
+  pswd varchar(10) NOT NULL,
+  email varchar(50) NOT NULL,
+  fname varchar(50) NOT NULL,
+  lname varchar(50) NOT NULL,
+  sex char(1) NOT NULL,
+  pref tinyint(1) NOT NULL
+);
